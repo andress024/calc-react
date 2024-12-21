@@ -9,7 +9,7 @@ export const Boton = (props) => {
 
 
     return (
-        <div className={`boton-contenedor ${esOp(props.children) ? 'operador' : null}`.trimEnd()}>
+        <div className={`boton-contenedor ${esOp(props.children) ? 'operador' : null}`.trimEnd()} onClick={() => props.manejarClic(props.children)}>
             {props.children}
         </div>
     )
